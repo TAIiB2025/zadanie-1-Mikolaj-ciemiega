@@ -1,0 +1,19 @@
+<div [ngClass]="{'promocja':product.czyPromocja}">
+    <table>
+        <tr>
+            <th>Nazwa</th>
+            <th>Cena</th>
+            <th>Data utworzenia</th>
+            <th>Dodaj do koszyka</th>
+    
+        </tr>
+        <tr>
+            <th><strong>{{product.nazwa}}</strong></th>
+            <th><strong>{{product.cena}} zł</strong></th>
+            <th><strong>{{product.dataUtworzenia}}</strong></th>
+            <th><button (click)="onDodajDoKoszyka()">
+                dodaj do koszyka</button></th>
+        </tr>
+    </table>
+    
+</div>

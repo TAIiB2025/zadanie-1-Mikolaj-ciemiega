@@ -26,7 +26,9 @@ export class AppComponent {
   pokarzProdukty=true;
 
 
+
   onDodanie(event:Product):void{
     this.koszyk+=event.cena;
+    
   }
 }

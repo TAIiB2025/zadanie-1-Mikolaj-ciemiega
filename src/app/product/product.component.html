@@ -5,7 +5,7 @@
             <th>Cena</th>
             <th>Data utworzenia</th>
             <th>Dodaj do koszyka</th>
-    
+            <th>Liczba kliknięć</th>
         </tr>
         <tr>
             <th><strong>{{product.nazwa}}</strong></th>
@@ -13,6 +13,9 @@
             <th><strong>{{product.dataUtworzenia}}</strong></th>
             <th><button (click)="onDodajDoKoszyka()">
                 dodaj do koszyka</button></th>
+            <th>
+                <strong>{{click}}</strong>
+            </th>
         </tr>
     </table>
     

@@ -12,7 +12,9 @@ export class ProductComponent {
   @Input() product!: Product;
   @Output() dodano = new EventEmitter<Product>();
 
+  click=0;
   onDodajDoKoszyka():void{
     this.dodano.emit(this.product);
+    this.click++;
   }
 }
